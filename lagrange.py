@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def kinetic_energy(A):
+def kinetic_energy(A): # takes matrix input, vector is [mass, Vx, Vy, Vz], calculates total kinetic energy of point masses 
     i = 0
     j = 1
     T = 0
@@ -14,7 +14,7 @@ def kinetic_energy(A):
     return T
 
 
-def potential_energy(A):
+def potential_energy(A): # Takes matrix input [mass, x, y, z], calculates total potential energy between point masses
     G = 6.67e-11
     i = 0
     Grav_PE = 0.
